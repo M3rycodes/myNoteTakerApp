@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Note Taker</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Note Taker</h1>
+    </header>
+    <main>
+      <section class="notes-section">
+        <div class="notes-list">
+          <h2>Existing Notes</h2>
+          <ul id="notes-list"></ul>
+        </div>
+        <div class="note-details">
+          <h2>Note Details</h2>
+          <input type="text" id="note-title" placeholder="Enter Note Title">
+          <textarea id="note-text" placeholder="Enter Note Text"></textarea>
+          <div class="buttons">
+            <button id="save-btn" onclick="saveNote()">Save Note</button>
+            <button id="clear-btn" onclick="clearForm()">Clear Form</button>
+            <button id="new-note-btn" onclick="createNewNote()">New Note</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
